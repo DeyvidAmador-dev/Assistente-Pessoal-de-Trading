@@ -24,6 +24,9 @@ tasks = {}  # 🔥 controle das tasks
 
 ultimo_ativo = None
 
+print("TELEGRAM_TOKEN:", os.getenv("TELEGRAM_TOKEN"))
+print("DERIV_TOKEN:", os.getenv("DERIV_TOKEN"))
+print("CHAT_ID:", os.getenv("CHAT_ID"))
 # ===== DERIV =====
 def conectar_deriv():
     ws = websocket.create_connection("wss://ws.derivws.com/websockets/v3?app_id=1089")
